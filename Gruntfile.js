@@ -156,7 +156,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-autoprefixer' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.registerTask( 'readme', ['wp_readme_to_markdown']);
-	grunt.registerTask( 'default', ['jshint', 'uglify:production', 'sass', 'autoprefixer', 'cssmin'] );
+	grunt.registerTask( 'default', ['phpcs', 'jshint', 'uglify:production', 'sass', 'autoprefixer', 'cssmin'] );
 
 	grunt.util.linefeed = '\n';
 
